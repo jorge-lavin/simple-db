@@ -40,8 +40,8 @@ typedef enum PrepareResult_t PrepareResult;
 
 struct Row_t {
     uint32_t id;
-    char username[COLUMN_USERNAME_SIZE];
-    char email[COLUMN_EMAIL_SIZE];
+    char username[COLUMN_USERNAME_SIZE + 1];
+    char email[COLUMN_EMAIL_SIZE + 1];
 };
 typedef struct Row_t Row;
 
